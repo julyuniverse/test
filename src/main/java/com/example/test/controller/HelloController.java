@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@AllArgsConstructor
 public class HelloController {
     @GetMapping("/hello")
     public ResponseEntity<String> hello() {
