@@ -39,7 +39,7 @@ jobs:
           # 수정 ./demo-deploy.sh 부분에서 &를 붙여야 actions에서 무한 루프에 빠지지 않는다.
           command: |
             cd ~/app/script/
-            ./demo-deploy.sh &
+            ./test-deploy.sh &
           host: ${{ secrets.HOST }}
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
