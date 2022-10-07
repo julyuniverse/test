@@ -5,7 +5,8 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
+/* 날짜 추가 */
+version = '0.0.1-SNAPSHOT-'+new Date().format("yyyyMMddHHmmss")
 sourceCompatibility = '17'
 
 configurations {
@@ -28,4 +29,9 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+/* plain.jar 생성 방지 */
+jar {
+	enabled = false
 }
